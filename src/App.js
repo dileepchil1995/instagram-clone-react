@@ -210,7 +210,7 @@ const signIn = (event) => {
           <div className="app_postsLeft">
               {
                 posts.map(({id, post})=> (
-                  <Post key={id} username={post.username} caption={post.caption} imageURL={post.imageURL}/>
+                  <Post key={id} postId={id} user={user} username={post.username} caption={post.caption} imageURL={post.imageURL}/>
                 ))
               }
         </div>
